@@ -1,6 +1,6 @@
 (function () {
     const config = {
-        cards: 32,
+        cards: 36,
         time: "01:10",
     }
     let isStarted;

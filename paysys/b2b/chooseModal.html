@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="img/icons/icon1.png" type="image/x-icon">
+</head>
+<body class="acceptance">
+	<header>
+		<nav>
+			<a href="index.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+			
+			<a href="#/">Партнерам</a>
+			<div class="header__dropdown">
+				<span>Продукты</span>
+				<img src="img/down_arrow.svg" alt="down_arrow">
+			</div>
+			<a href="#/">Разработчикам</a>
+			<a href="#/">Правила Пользования</a>
+			
+			<img src="img/language.svg" alt="language">
+			<img src="img/search.svg" alt="search">
+
+			<a href="#/" class="header__btn">Войти</a>
+		</nav>
+	</header>
+	<section class="choose__main">
+		<h2 class="choose__main_title">Настройка CMS, фреймворка или CRM</h2>
+		<p class="choose__main_text">Для сервисов на основе CMS, SaaS или фреймворков, а также для CRM и мессенджеров. Просто включите модуль PaySys и пропишите настройки. Если ваша система есть в списке, значит, модуль для неё уже разработан. Если нет, напишите нам.</p>
+		<div class="choose__main_buttons">
+			<a href="#/" class="choose__main_btn">Подключить PaySys</a>
+			<a href="#/" class="choose__main_btn2">
+				<img src="img/choose_icon_blue.svg" alt="choose_icon_blue">
+				<span>Задать вопрос</span>
+			</a>
+		</div>
+		<h2 class="choose__main_subtitle">Платежный модуль</h2>
+		<p class="choose__main_text">Модуль позволяет принимать платежи через PaySys — для ИП и юрлиц</p>
+		<input type="text" name="modal" class="choose__main_input" placeholder="Введите название модуля">
+	</section>
+	<footer>
+        <div class="footer__conteiner">
+            <div class="footer__inner">
+                <div class="footer__iteam" style="margin-right: 211px;">
+                    <img src="img/footer_logo.png" alt="img/footer_logo.png">
+                    <p>Ваш путеводитель в мир электронной коммерции и финансовых решений в сфере IT</p>
+                    <a href="#/" data-open="question" class="footer__btn open__modal">Задать Вопрос</a>
+                </div>
+                <div class="footer__iteam" style="margin-right: 31px; width: 157px;">
+                    <p>Продукты</p>
+                    <a href="#/" class="open__modal">Онлайн оплаты</a>
+                    <a href="#/" class="open__modal">Маркетплейсы</a>
+                    <a href="#/" class="open__modal">Фин-Тех решения</a>
+                    <a href="#/" class="open__modal">Переводы</a>
+                </div>
+                <div class="footer__iteam" style="margin-right: 33px; width: 157px;">
+                    <p>О Нас</p>
+                    <a href="./aboutUs.html">Компания PaySys</a>
+                    <a href="./aboutUs.html">Контакты</a>
+                    <a href="./aboutUs.html">Обратная Связь</a>
+                </div>
+                <div class="footer__iteam" style="width: 255px;">
+                    <p>Быстрая Связь</p>
+                    <p class="footer__text">Не стесняйтесь задавать простые вопросы, мы всегда готовы помочь вам!</p>
+                    <a class="footer__link" href="tel:998712522802">+998 71 2522802</a>
+                    <a class="footer__link" href="mailto:info@paysys.uz">info@paysys.uz</a>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__bottom">
+                <p>© Paysys 2021, All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div style="display: none;" data-kind="notwork" class="modal__inner">
+            <img src="img/modal__foto.svg" alt="modal__foto">
+            <p class="modal__text">Данный раздел находится в разработке</p>
+            <img src="img/modal__close.svg" alt="modal__close" class="close__modal">
+        </div>
+        <div style="display: none;" data-kind="question" class="modal__inner2">
+            <h2>Оставьте свой номер телефона и мы позвоним вам при первой возможности!</h2>
+            <form action="#">
+                <div class="modal__form_block">
+                    <label for="number">+998</label>
+                    <input type="tel" id="number" name="number">
+                </div>
+
+                <button type="submit" class="form__btn">Позвоните Мне!</button>
+            </form>
+            <p>Либо свяжитесь с нами</p>
+            <div class="modal__inner2_bottom">
+                <p>Сами :</p>
+                <a href="tel:998909015717">+998 90 901-57-17</a>
+            </div>
+
+            <img src="img/modal2__foto.svg" class="modal__foto ">
+            <img src="img/modal2__foto2.svg" class="modal__foto ">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+@import './color';
+@import './font';
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Изменение цвета выделения на старнице */
+::selection {background: #2F80ED; color:#fff;}
+::-moz-selection {background: #2F80ED; color:#fff;}
+::-webkit-selection {background: #2F80ED; color:#fff;}
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+input, textarea {
+    outline: none;
+    border: none;
+
+    &::placeholder{
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+        font-weight: inherit;
+    }
+}
+.container{
+    width: 100%;
+    max-width: calc(1440px - 380px);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header__navigation{
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+
+
+    img{
+        margin-right: 46px;
+    }
+
+    a{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: var(--white);
+    }
+
+    a.first{
+        width: 200px;
+    }
+    a.second{
+        width: 250px;
+        margin-right: 35px;
+    }
+    a.third{
+        width: 130px;
+        margin-right: 55px;
+    }
+    button{
+        width: 180px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--white);
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--black);
+    }
+}
+
+
+
+// Start media
+@import './media'
